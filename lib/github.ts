@@ -46,6 +46,7 @@ async function periodicallyFetchProjects(username: string) {
   setInterval(async () => {
     try {
       const projects = await getLatestProjects(username);
+      console.log(projects)
     } catch (error) {
       console.error('Error fetching projects:', error);
     }
