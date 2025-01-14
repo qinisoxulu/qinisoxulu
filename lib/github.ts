@@ -38,7 +38,7 @@ export async function getReadme(owner: string, repo: string) {
     const content = Buffer.from(data.content, 'base64').toString('utf-8');
     return content;
   } catch (error) {
-    return 'Unable to fetch README';
+    return 'Unable to fetch README: ' + error;
   }
 }
 
@@ -52,3 +52,5 @@ async function periodicallyFetchProjects(username: string) {
   }, 5000);
 }
 
+const username = 'qinisonhlakaniphoxulu';
+periodicallyFetchProjects(username);
