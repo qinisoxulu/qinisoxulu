@@ -1,6 +1,5 @@
-import { useState } from 'react'
+
 import { Button } from "@/components/ui/button"
-import { usePointerEffect } from '@/hooks/usePointerEffect'
 import { BarChart, PieChart, LineChart, ScatterChart } from 'lucide-react'
 import { AnimatedPython } from './AnimatedPython'
 
@@ -12,7 +11,6 @@ const skills = [
 ]
 
 export function DataScienceSection() {
-  const { x, y } = usePointerEffect()
 
   return (
     <section className="bg-cyan-950 text-white py-16 relative overflow-hidden">
