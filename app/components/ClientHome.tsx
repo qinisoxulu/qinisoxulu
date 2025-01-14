@@ -10,6 +10,7 @@ import ProjectCard from './ProjectCard'
 import BlogPostCard from './BlogPostCard'
 import ResumeSection from './ResumeSection'
 import { Hero } from './Hero'
+import { DataScienceSection } from './DataScienceSection'
 
 interface Project {
   id: number
@@ -76,8 +77,9 @@ export default function ClientHome({ projects }: ClientHomeProps) {
   return (
     <div className="space-y-12">
 
-        <Hero />
+      <Hero />
 
+      <DataScienceSection />
         <section className="bg-gray-100 p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
             <h2 className="text-4xl font-bold mb-6 text-blue-600">About Me</h2>
             <p className="mb-6 text-gray-700">

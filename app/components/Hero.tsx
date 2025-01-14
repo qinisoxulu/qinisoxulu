@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { useTypingEffect } from '@/hooks/useTypingEffect'
 
 export function Hero() {
@@ -8,7 +7,6 @@ export function Hero() {
     <div className="bg-cyan-950 text-white min-h-screen flex items-center justify-center">
       <div className="container mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">Hello, World!</h1>
-        <Button className="mb-12 bg-cyan-600 hover:bg-cyan-700">Contact Me</Button>
         <div className="bg-black p-6 rounded-lg shadow-lg max-w-2xl mx-auto relative">
           <div className="flex items-center justify-start mb-4">
             <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
@@ -24,6 +22,7 @@ export function Hero() {
         </div>
       </div>
     </div>
+  
   )
 }
 

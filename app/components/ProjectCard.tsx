@@ -11,7 +11,6 @@ import ReactMarkdown from 'react-markdown'
 interface ProjectCardProps {
   title: string
   description: string
-  // readMoreLink: string
   liveLink?: string
   githubLink: string
   lastUpdated: string
@@ -50,20 +49,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, liveLink,
         <p className="text-gray-600 mb-2">{description}</p>
         <p className="text-sm text-gray-500 mb-4">Last updated: {formatDate(lastUpdated)}</p>
         <div className="flex space-x-2">
-          <Button onClick={fetchReadme} variant="outline" size="sm">
+          <Button className="bg-cyan-600 hover:bg-cyan-700" onClick={fetchReadme} variant="outline" size="sm">
             <FileText className="mr-2 h-4 w-4" />
             Read More
-          </Button>
+          </Button> 
           {liveLink && (
             <Link href={liveLink} target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="sm">
+              <Button className="bg-cyan-600 hover:bg-cyan-700" variant="outline" size="sm">
                 <ExternalLink className="mr-2 h-4 w-4" />
                 View Live
               </Button>
             </Link>
           )}
           <Link href={githubLink} target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" size="sm">
+            <Button className="bg-cyan-600 hover:bg-cyan-700" variant="outline" size="sm">
               <Github className="mr-2 h-4 w-4" />
               GitHub
             </Button>
