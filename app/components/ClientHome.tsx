@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import ProjectCard from './ProjectCard'
 import BlogPostCard from './BlogPostCard'
 import ResumeSection from './ResumeSection'
+import { Hero } from './Hero'
 
 interface Project {
   id: number
@@ -74,19 +75,8 @@ export default function ClientHome({ projects }: ClientHomeProps) {
 
   return (
     <div className="space-y-12">
-        <section className="text-center py-16 bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white rounded-xl shadow-lg relative overflow-hidden">
-            {/* <img 
-            src="/path/to/your/data-science-image.jpg" 
-            alt="Data Science" 
-            className="absolute inset-0 w-full h-full object-cover opacity-20"
-            /> */}
-            <div className="relative z-10">
-            <h1 className="text-5xl font-extrabold mb-6">Welcome to My Portfolio</h1>
-            <p className="text-xl font-light max-w-3xl mx-auto">
-                I&apos;m a software developer student at WeThinkCode, passionate about app development, data analytics, and blockchain (web3).
-            </p>
-            </div>
-        </section>
+
+        <Hero />
 
         <section className="bg-gray-100 p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
             <h2 className="text-4xl font-bold mb-6 text-blue-600">About Me</h2>

@@ -7,7 +7,3 @@ export default async function Home() {
 
   return <ClientHome projects={projects} />
 }
-
-
-
-

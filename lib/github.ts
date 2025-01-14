@@ -1,15 +1,15 @@
-import { Octokit } from '@octokit/rest'
+import { Octokit } from '@octokit/rest';
 
 interface Project {
-  id: number
-  name: string
-  description: string
-  homepage: string
-  html_url: string
-  updated_at: string
+  id: number;
+  name: string;
+  description: string;
+  homepage: string;
+  html_url: string;
+  updated_at: string;
 }
 
-const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
+const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
 export async function getLatestProjects(username: string): Promise<Project[]> {
   const { data } = await octokit.repos.listForUser({
@@ -33,12 +33,22 @@ export async function getReadme(owner: string, repo: string) {
     const { data } = await octokit.repos.getReadme({
       owner,
       repo,
-    })
+    });
 
-    const content = Buffer.from(data.content, 'base64').toString('utf-8')
-    return content
+    const content = Buffer.from(data.content, 'base64').toString('utf-8');
+    return content;
   } catch (error) {
-    console.error('Error fetching README:', error)
-    return 'Unable to fetch README'
+    return 'Unable to fetch README';
   }
 }
+
+async function periodicallyFetchProjects(username: string) {
+  setInterval(async () => {
+    try {
+      const projects = await getLatestProjects(username);
+    } catch (error) {
+      console.error('Error fetching projects:', error);
+    }
+  }, 5000);
+}
+
