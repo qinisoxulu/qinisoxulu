@@ -80,7 +80,7 @@ export default function ClientHome({ projects }: ClientHomeProps) {
       <Hero />
 
       <DataScienceSection />
-        <section className="bg-gray-100 p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <section className="bg-cyan-800 p-6 rounded-lg shadow-lg">
             <h2 className="text-4xl font-bold mb-6 text-blue-600">About Me</h2>
             <p className="mb-6 text-gray-700">
             As a student at WeThinkCode, I&apos;m constantly learning and improving my skills in software development. 

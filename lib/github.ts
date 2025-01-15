@@ -50,7 +50,7 @@ async function periodicallyFetchProjects(username: string) {
     } catch (error) {
       console.error('Error fetching projects:', error);
     }
-  }, 5000);
+  }, 5000); //Day : 86400000 // Second : 1000
 }
 
 const username = 'qinisonhlakaniphoxulu';
