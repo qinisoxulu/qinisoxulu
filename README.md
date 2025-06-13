@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hi there! 👋<br><br>I'm a Software Engineering student at WeThinkCode_, passionate about creating innovative solutions through technology. My main interests lie in Full Stack Development and exploring the endless possibilities of Blockchain and Web3.<br><br>🌐 Technologies I Work With: Python, C++, Java, JavaScript, NextJS, Node.js, Solidity, and more.<br>🚀 Current Focus: Building scalable web applications and diving deep into decentralized systems.<br>💡 Always Learning: Staying curious and open to new challenges in the ever-evolving tech space.<br>💻 Fun Fact: I enjoy solving problems.
+Hello there! 👋<br><br>I'm a Software Engineering student at WeThinkCode_, passionate about creating innovative solutions through technology. My main interests lie in Full Stack Development and exploring the endless possibilities of Blockchain and Web3.<br><br>🌐 Technologies I Work With: Python, C++, Java, JavaScript, NextJS, Expo, Node.js, Solidity, and more.<br>🚀 Current Focus: Building scalable web applications and diving deep into decentralized systems.<br>💡 Always Learning: Staying curious and open to new challenges in the ever-evolving tech space.<br>💻 Fun Fact: When I am not coding, I think about coding. When I code I think about why I ever thought coding would be easy.😅
 
 
 ## 🌐 Socials:
