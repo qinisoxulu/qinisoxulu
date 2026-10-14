@@ -14,7 +14,7 @@
 
 ---
 
-I am a Software Engineering graduate and the founder of **Vennor**, an AI-powered study platform and cross-platform application for South African students. Specializing in cloud infrastructure and full-stack product engineering, I focus on distributed systems, platform architecture, and building reliable systems that solve real-world problems.
+I am a Software Engineering graduate and the founder of **[Vennor](https://vennor.co.za)**, an AI-powered study platform and cross-platform application for South African students. Specializing in cloud infrastructure and full-stack product engineering, I focus on distributed systems, platform architecture, and building reliable systems that solve real-world problems.
 
 ---
 
